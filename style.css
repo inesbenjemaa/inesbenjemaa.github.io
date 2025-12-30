@@ -509,7 +509,7 @@ section:nth-child(even) {
 
 .section-title {
     font-size: 2.8rem;
-    color: var(--blue);
+    color: var(--cyber-blue);
     margin-bottom: 20px;
     position: relative;
     display: inline-block;
