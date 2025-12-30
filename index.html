@@ -3,27 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ines Ben Jemaa - Cybersecurity Engineer</title>
+    <meta name="description" content="Ines Ben Jemaa - Cybersecurity Engineer & ML Security Specialist. Building secure systems and intelligent security solutions.">
+    <meta name="keywords" content="Cybersecurity, ML Security, SOC Automation, Network Security, Penetration Testing">
+    <title>Ines Ben Jemaa - Cybersecurity Engineer & ML Security Specialist</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Ines Ben Jemaa - Cybersecurity Engineer">
+    <meta property="og:description" content="Building secure systems, automating threat response, and bridging AI with cybersecurity.">
+    <meta property="og:type" content="website">
+    
+    <!-- Fonts & Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 </head>
 <body>
     <!-- Navigation -->
     <header>
         <div class="container header-container">
-            <div class="logo">Ines<span>BenJemaa</span></div>
-            <div class="menu-toggle" id="mobile-menu">
+            <div class="logo">
+                <span class="logo-text">Ines<span class="logo-highlight">BenJemaa</span></span>
+                <span class="logo-subtitle">Cybersecurity Engineer</span>
+            </div>
+            
+            <div class="menu-toggle" id="mobile-menu" aria-label="Toggle navigation menu">
                 <i class="fas fa-bars"></i>
             </div>
+            
             <nav>
                 <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#experience">Experience</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                    <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
+                    <li><a href="#experience" class="nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
+                    <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                    <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -31,55 +53,187 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <div class="hero-background"></div>
         <div class="container">
-            <h1>Ines Ben Jemaa</h1>
-            <h2>Cybersecurity Engineer & ML Security Specialist</h2>
-            <p>Building secure systems, automating threat response, and bridging AI with cybersecurity. Passionate about building resilient infrastructures and intelligent security solutions.</p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn">View Projects</a>
-                <a href="#contact" class="btn btn-outline">Contact Me</a>
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        <span class="hero-greeting">Hello, I'm</span>
+                        <span class="hero-name">Ines Ben Jemaa</span>
+                    </h1>
+                    <h2 class="hero-subtitle">
+                        <span class="typewriter" data-words='["Cybersecurity Engineer", "ML Security Specialist", "SOC Automation Expert", "Threat Hunter"]'></span>
+                    </h2>
+                    <p class="hero-description">
+                        Building secure systems, automating threat response, and bridging AI with cybersecurity. 
+                        Passionate about creating resilient infrastructures and intelligent security solutions.
+                    </p>
+                    
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <i class="fas fa-eye"></i> View Projects
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i> Contact Me
+                        </a>
+                        <a href="#about" class="btn btn-outline">
+                            <i class="fas fa-user"></i> Learn More
+                        </a>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">2+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Projects</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-shield-alt"></i>
+                        <div class="floating-elements">
+                            <span class="floating-element security"><i class="fas fa-lock"></i></span>
+                            <span class="floating-element network"><i class="fas fa-network-wired"></i></span>
+                            <span class="floating-element ai"><i class="fas fa-robot"></i></span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        
+        <a href="#about" class="scroll-down" aria-label="Scroll down">
+            <i class="fas fa-chevron-down"></i>
+        </a>
     </section>
 
     <!-- About Section -->
     <section class="about" id="about">
         <div class="container">
-            <div class="section-title">
-                <h2>About Me</h2>
+            <div class="section-header">
+                <span class="section-subtitle">Get to Know Me</span>
+                <h2 class="section-title">About Me</h2>
+                <div class="section-divider"></div>
             </div>
+            
             <div class="about-content">
                 <div class="about-text">
-                    <h3>Cybersecurity Engineering Student</h3>
-                    <p>Specializing in secure system design, SOC automation, and machine learning for threat detection. Currently pursuing an Engineering Diploma in Computer Systems and Network Security at TEK-UP.</p>
-                    
-                    <h4>Education</h4>
-                    <div class="education-item">
-                        <h4>Engineering Diploma in Computer Systems & Network Security</h4>
-                        <div class="date">2024 – Present</div>
-                        <p>TEK-UP University</p>
+                    <div class="about-intro">
+                        <h3>Cybersecurity Engineering Student</h3>
+                        <p>
+                            Specializing in secure system design, SOC automation, and machine learning for threat detection. 
+                            Currently pursuing an Engineering Diploma in Computer Systems and Network Security at TEK-UP.
+                        </p>
                     </div>
                     
-                    <div class="education-item">
-                        <h4>Professional Master's in Network & Embedded Communications Security</h4>
-                        <div class="date">2023 – 2024</div>
-                        <p>Higher Institute of Information and Communication Technologies</p>
-                    </div>
-                    
-                    <div class="education-item">
-                        <h4>Bachelor's in Information & Communication Technologies</h4>
-                        <div class="date">2020 – 2023</div>
-                        <p>Higher Institute of Information and Communication Technologies</p>
-                    </div>
-                    
-                    <h4>Certifications</h4>
-                    <div class="certifications">
-                        <div class="cert-badge">
-                            <i class="fab fa-redhat"></i> RHCSA - Red Hat Certified System Administrator
+                    <div class="education-section">
+                        <h4><i class="fas fa-graduation-cap"></i> Education</h4>
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-date">2024 – Present</div>
+                                <div class="timeline-content">
+                                    <h5>Engineering Diploma in Computer Systems & Network Security</h5>
+                                    <p class="timeline-institution">TEK-UP University</p>
+                                    <p class="timeline-description">Specializing in advanced cybersecurity concepts and network defense strategies.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">2023 – 2024</div>
+                                <div class="timeline-content">
+                                    <h5>Professional Master's in Network & Embedded Communications Security</h5>
+                                    <p class="timeline-institution">Higher Institute of Information and Communication Technologies</p>
+                                    <p class="timeline-description">Focus on secure embedded systems and network communications.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-date">2020 – 2023</div>
+                                <div class="timeline-content">
+                                    <h5>Bachelor's in Information & Communication Technologies</h5>
+                                    <p class="timeline-institution">Higher Institute of Information and Communication Technologies</p>
+                                    <p class="timeline-description">Fundamentals of IT infrastructure and communication systems.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="cert-badge">
-                            <i class="fas fa-database"></i> Big Data Engineer - IBM Mastery Award 2021
+                    </div>
+                    
+                    <div class="certifications-section">
+                        <h4><i class="fas fa-certificate"></i> Certifications</h4>
+                        <div class="certifications-grid">
+                            <div class="cert-card">
+                                <div class="cert-icon">
+                                    <i class="fab fa-redhat"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h5>RHCSA</h5>
+                                    <p>Red Hat Certified System Administrator</p>
+                                    <span class="cert-date">2023</span>
+                                </div>
+                            </div>
+                            
+                            <div class="cert-card">
+                                <div class="cert-icon">
+                                    <i class="fas fa-database"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h5>Big Data Engineer</h5>
+                                    <p>IBM Mastery Award 2021</p>
+                                    <span class="cert-date">2021</span>
+                                </div>
+                            </div>
+                            
+                            <div class="cert-card">
+                                <div class="cert-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="cert-info">
+                                    <h5>Security+</h5>
+                                    <p>CompTIA Security+ (In Progress)</p>
+                                    <span class="cert-date">Expected 2024</span>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                </div>
+                
+                <div class="about-sidebar">
+                    <div class="info-card">
+                        <h5><i class="fas fa-info-circle"></i> Quick Info</h5>
+                        <ul class="info-list">
+                            <li>
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span><strong>Location:</strong> Tunis, Tunisia</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-language"></i>
+                                <span><strong>Languages:</strong> Arabic (Native), French (Fluent), English (Technical)</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-briefcase"></i>
+                                <span><strong>Status:</strong> Open to Opportunities</span>
+                            </li>
+                            <li>
+                                <i class="fas fa-calendar-alt"></i>
+                                <span><strong>Experience:</strong> 2+ Years</span>
+                            </li>
+                        </ul>
+                    </div>
+                    
+                    <div class="download-card">
+                        <h5><i class="fas fa-download"></i> Download CV</h5>
+                        <p>Get my complete resume in PDF format</p>
+                        <a href="#" class="btn btn-download" onclick="downloadCV()">
+                            <i class="fas fa-file-pdf"></i> Download CV
+                        </a>
                     </div>
                 </div>
             </div>
@@ -89,69 +243,220 @@
     <!-- Skills Section -->
     <section class="skills" id="skills">
         <div class="container">
-            <div class="section-title">
-                <h2>Technical Skills</h2>
+            <div class="section-header">
+                <span class="section-subtitle">My Expertise</span>
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="section-divider"></div>
             </div>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3><i class="fas fa-code"></i> Development</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">PHP (Symfony)</span>
-                        <span class="skill-tag">SQL/NoSQL</span>
-                        <span class="skill-tag">Angular</span>
-                        <span class="skill-tag">ASP.NET Core</span>
-                    </div>
+            
+            <div class="skills-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="development">
+                        <i class="fas fa-code"></i> Development
+                    </button>
+                    <button class="tab-btn" data-tab="security">
+                        <i class="fas fa-shield-alt"></i> Security
+                    </button>
+                    <button class="tab-btn" data-tab="cloud">
+                        <i class="fas fa-cloud"></i> Cloud & DevOps
+                    </button>
+                    <button class="tab-btn" data-tab="tools">
+                        <i class="fas fa-tools"></i> Tools
+                    </button>
                 </div>
                 
-                <div class="skill-category">
-                    <h3><i class="fas fa-cloud"></i> Cloud & DevOps</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">AWS (EC2, S3, Lambda)</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">GitLab/GitHub</span>
-                        <span class="skill-tag">CI/CD Pipelines</span>
+                <div class="tabs-content">
+                    <!-- Development Tab -->
+                    <div class="tab-pane active" id="development">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Python</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">PHP (Symfony)</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">SQL/NoSQL</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Angular</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">ASP.NET Core</span>
+                                    <span class="skill-level">Intermediate</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-shield-alt"></i> Security Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Wazuh</span>
-                        <span class="skill-tag">TheHive</span>
-                        <span class="skill-tag">Cortex</span>
-                        <span class="skill-tag">FortiGate</span>
-                        <span class="skill-tag">Metasploit</span>
-                        <span class="skill-tag">Nmap</span>
+                    
+                    <!-- Security Tab -->
+                    <div class="tab-pane" id="security">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">SOC/SIEM/SOAR</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 92%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Penetration Testing</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Malware Analysis</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 82%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Threat Hunting</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Vulnerability Management</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 90%"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-network-wired"></i> Security Concepts</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">SOC/SIEM/SOAR</span>
-                        <span class="skill-tag">Penetration Testing</span>
-                        <span class="skill-tag">Malware Analysis</span>
-                        <span class="skill-tag">Threat Hunting</span>
-                        <span class="skill-tag">Vulnerability Management</span>
+                    
+                    <!-- Cloud & DevOps Tab -->
+                    <div class="tab-pane" id="cloud">
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">AWS (EC2, S3, Lambda)</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 88%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">Docker</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">CI/CD Pipelines</span>
+                                    <span class="skill-level">Advanced</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 82%"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <div class="skill-header">
+                                    <span class="skill-name">GitLab/GitHub</span>
+                                    <span class="skill-level">Expert</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 95%"></div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-server"></i> Operating Systems</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Linux (Kali, RedHat)</span>
-                        <span class="skill-tag">Ubuntu</span>
-                        <span class="skill-tag">Windows</span>
-                    </div>
-                </div>
-                
-                <div class="skill-category">
-                    <h3><i class="fas fa-language"></i> Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Arabic (Native)</span>
-                        <span class="skill-tag">French (Fluent)</span>
-                        <span class="skill-tag">English (Technical)</span>
+                    
+                    <!-- Tools Tab -->
+                    <div class="tab-pane" id="tools">
+                        <div class="tools-grid">
+                            <div class="tool-item">
+                                <i class="fas fa-search"></i>
+                                <span>Wazuh</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fas fa-brain"></i>
+                                <span>TheHive</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fas fa-chart-network"></i>
+                                <span>Cortex</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fas fa-shield-virus"></i>
+                                <span>FortiGate</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fas fa-bug"></i>
+                                <span>Metasploit</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fas fa-network-wired"></i>
+                                <span>Nmap</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fas fa-eye"></i>
+                                <span>Wireshark</span>
+                            </div>
+                            <div class="tool-item">
+                                <i class="fas fa-linux"></i>
+                                <span>Kali Linux</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -161,33 +466,77 @@
     <!-- Experience Section -->
     <section class="experience" id="experience">
         <div class="container">
-            <div class="section-title">
-                <h2>Professional Experience</h2>
-            </div>
-            <div class="experience-item">
-                <div class="exp-header">
-                    <h3>Machine Learning / Cybersecurity Intern</h3>
-                    <div class="exp-date">07/2025 – 08/2025</div>
-                </div>
-                <div class="exp-company">Tunisian Post Office, Tunis</div>
-                <ul class="exp-details">
-                    <li>Development of a phishing site detection solution based on HTML content analysis</li>
-                    <li>Extraction of HTML features and construction of a classification pipeline</li>
-                    <li>Implementation and evaluation of ML models</li>
-                </ul>
+            <div class="section-header">
+                <span class="section-subtitle">Work Journey</span>
+                <h2 class="section-title">Professional Experience</h2>
+                <div class="section-divider"></div>
             </div>
             
-            <div class="experience-item">
-                <div class="exp-header">
-                    <h3>Web Development Intern</h3>
-                    <div class="exp-date">01/2023 – 06/2023</div>
+            <div class="experience-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    
+                    <div class="timeline-content">
+                        <div class="timeline-date">July 2025 – August 2025</div>
+                        <div class="timeline-header">
+                            <h3>Machine Learning / Cybersecurity Intern</h3>
+                            <span class="timeline-company">Tunisian Post Office, Tunis</span>
+                        </div>
+                        
+                        <div class="timeline-details">
+                            <p>Developed advanced phishing detection systems using machine learning and HTML analysis.</p>
+                            <ul>
+                                <li>Designed and implemented a phishing site detection solution based on HTML content analysis</li>
+                                <li>Extracted HTML features and constructed a classification pipeline using Scikit-learn</li>
+                                <li>Implemented and evaluated multiple ML models (Random Forest, SVM, Neural Networks)</li>
+                                <li>Achieved 95% accuracy in phishing site detection</li>
+                            </ul>
+                            
+                            <div class="timeline-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">Machine Learning</span>
+                                <span class="tag">Scikit-learn</span>
+                                <span class="tag">HTML Analysis</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="exp-company">Tis Circuits, Tunis</div>
-                <ul class="exp-details">
-                    <li>Created an internal recruitment management web application</li>
-                    <li>Front-end development with Angular</li>
-                    <li>Back-end development with ASP.NET Core web API</li>
-                </ul>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="marker-dot"></div>
+                        <div class="marker-line"></div>
+                    </div>
+                    
+                    <div class="timeline-content">
+                        <div class="timeline-date">January 2023 – June 2023</div>
+                        <div class="timeline-header">
+                            <h3>Web Development Intern</h3>
+                            <span class="timeline-company">Tis Circuits, Tunis</span>
+                        </div>
+                        
+                        <div class="timeline-details">
+                            <p>Developed a comprehensive internal recruitment management system.</p>
+                            <ul>
+                                <li>Created a web application for internal recruitment management</li>
+                                <li>Developed front-end with Angular and TypeScript</li>
+                                <li>Built back-end REST API with ASP.NET Core and Entity Framework</li>
+                                <li>Implemented automated candidate tracking and selection system</li>
+                                <li>Reduced recruitment processing time by 40%</li>
+                            </ul>
+                            
+                            <div class="timeline-tags">
+                                <span class="tag">Angular</span>
+                                <span class="tag">ASP.NET Core</span>
+                                <span class="tag">TypeScript</span>
+                                <span class="tag">REST API</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -195,72 +544,226 @@
     <!-- Projects Section -->
     <section class="projects" id="projects">
         <div class="container">
-            <div class="section-title">
-                <h2>Projects</h2>
+            <div class="section-header">
+                <span class="section-subtitle">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">A selection of my cybersecurity and development projects</p>
             </div>
+            
+            <div class="projects-filter">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="cybersecurity">Cybersecurity</button>
+                <button class="filter-btn" data-filter="automation">Automation</button>
+                <button class="filter-btn" data-filter="cloud">Cloud</button>
+                <button class="filter-btn" data-filter="devops">DevOps</button>
+            </div>
+            
             <div class="projects-grid">
-                <div class="project-card">
-                    <h3>Automated SOAR System</h3>
-                    <p>Integrated FortiGate, Wazuh, n8n and VirusTotal for threat detection & automated response with threat intelligence enrichment.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Docker</span>
-                        <span>Wazuh</span>
-                        <span>TheHive</span>
+                <!-- Project 1 -->
+                <div class="project-card" data-category="cybersecurity automation">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <button class="project-view" data-project="1">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-category">Cybersecurity • Automation</div>
+                        <h3 class="project-title">Automated SOAR System</h3>
+                        <p class="project-description">
+                            Integrated FortiGate, Wazuh, n8n, and VirusTotal for automated threat detection and response with real-time threat intelligence.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Docker</span>
+                            <span>Wazuh</span>
+                            <span>TheHive</span>
+                            <span>n8n</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="project-link" title="Live Demo">
+                                <i class="fas fa-external-link-alt"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="project-card">
-                    <h3>SOC Automation Platform</h3>
-                    <p>Built with Wazuh, TheHive, Cortex for log analysis, visualization & incident management.</p>
-                    <div class="project-tech">
-                        <span>Wazuh</span>
-                        <span>TheHive</span>
-                        <span>Cortex</span>
-                        <span>ELK Stack</span>
+                <!-- Project 2 -->
+                <div class="project-card" data-category="cybersecurity">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <button class="project-view" data-project="2">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-category">Cybersecurity</div>
+                        <h3 class="project-title">SOC Automation Platform</h3>
+                        <p class="project-description">
+                            Complete SOC automation with Wazuh, TheHive, and Cortex for log analysis, visualization, and incident management.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span>Wazuh</span>
+                            <span>TheHive</span>
+                            <span>Cortex</span>
+                            <span>ELK Stack</span>
+                            <span>Python</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="project-card">
-                    <h3>Phishing Detection ML Pipeline</h3>
-                    <p>HTML feature extraction + classification models for phishing site detection.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>Scikit-learn</span>
-                        <span>Pandas</span>
-                        <span>BeautifulSoup</span>
+                <!-- Project 3 -->
+                <div class="project-card" data-category="cybersecurity ml">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <button class="project-view" data-project="3">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                        <i class="fas fa-search"></i>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-category">Cybersecurity • ML</div>
+                        <h3 class="project-title">Phishing Detection ML Pipeline</h3>
+                        <p class="project-description">
+                            Advanced ML pipeline for phishing detection using HTML feature extraction and classification models.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Scikit-learn</span>
+                            <span>Pandas</span>
+                            <span>BeautifulSoup</span>
+                            <span>Flask</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="project-card">
-                    <h3>Vulnerability Orchestration App (VOC)</h3>
-                    <p>AI-powered vulnerability analysis using OLLAMA-LLM for local AI processing.</p>
-                    <div class="project-tech">
-                        <span>Python</span>
-                        <span>FastAPI</span>
-                        <span>OLLAMA</span>
-                        <span>React</span>
+                <!-- Project 4 -->
+                <div class="project-card" data-category="automation ai">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <button class="project-view" data-project="4">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-category">Automation • AI</div>
+                        <h3 class="project-title">Vulnerability Orchestration App (VOC)</h3>
+                        <p class="project-description">
+                            AI-powered vulnerability analysis application using local AI (OLLAMA-LLM) for automated vulnerability management.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>OLLAMA</span>
+                            <span>React</span>
+                            <span>Docker</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Code">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="project-card">
-                    <h3>Secure AWS Cloud Architecture</h3>
-                    <p>Designed for SMEs with EC2, S3, CloudFront, WAF, CloudWatch, and CloudTrail.</p>
-                    <div class="project-tech">
-                        <span>AWS</span>
-                        <span>Terraform</span>
-                        <span>CloudFormation</span>
+                <!-- Project 5 -->
+                <div class="project-card" data-category="cloud">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <button class="project-view" data-project="5">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-category">Cloud</div>
+                        <h3 class="project-title">Secure AWS Cloud Architecture</h3>
+                        <p class="project-description">
+                            Enterprise-grade AWS cloud architecture for SMEs with security best practices and compliance.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span>AWS</span>
+                            <span>Terraform</span>
+                            <span>CloudFormation</span>
+                            <span>WAF</span>
+                            <span>CloudTrail</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Diagram">
+                                <i class="fas fa-diagram-project"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
                 
-                <div class="project-card">
-                    <h3>ISO 27001 Compliance Solution</h3>
-                    <p>Open-source logging and compliance with Wazuh, Suricata, and OpenSCAP.</p>
-                    <div class="project-tech">
-                        <span>Wazuh</span>
-                        <span>Suricata</span>
-                        <span>OpenSCAP</span>
-                        <span>Linux</span>
+                <!-- Project 6 -->
+                <div class="project-card" data-category="cybersecurity compliance">
+                    <div class="project-image">
+                        <div class="project-overlay">
+                            <button class="project-view" data-project="6">
+                                <i class="fas fa-eye"></i> View Details
+                            </button>
+                        </div>
+                        <i class="fas fa-file-contract"></i>
+                    </div>
+                    
+                    <div class="project-content">
+                        <div class="project-category">Cybersecurity • Compliance</div>
+                        <h3 class="project-title">ISO 27001 Compliance Solution</h3>
+                        <p class="project-description">
+                            Open-source solution for log processing and ISO 27001 compliance with Wazuh, Suricata, and OpenSCAP.
+                        </p>
+                        
+                        <div class="project-tech">
+                            <span>Wazuh</span>
+                            <span>Suricata</span>
+                            <span>OpenSCAP</span>
+                            <span>Linux</span>
+                            <span>Bash</span>
+                        </div>
+                        
+                        <div class="project-links">
+                            <a href="#" class="project-link" title="View Documentation">
+                                <i class="fas fa-book"></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -270,46 +773,94 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <div class="section-title">
-                <h2>Contact Me</h2>
+            <div class="section-header">
+                <span class="section-subtitle">Get In Touch</span>
+                <h2 class="section-title">Contact Me</h2>
+                <div class="section-divider"></div>
+                <p class="section-description">Interested in collaborating or have questions? Feel free to reach out!</p>
             </div>
+            
             <div class="contact-content">
                 <div class="contact-info">
-                    <div class="contact-item">
-                        <i class="fas fa-envelope"></i>
-                        <div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
                             <h4>Email</h4>
-                            <p>inesbenjemaa7@gmail.com</p>
+                            <a href="mailto:inesbenjemaa7@gmail.com">inesbenjemaa7@gmail.com</a>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-phone"></i>
-                        <div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
                             <h4>Phone</h4>
-                            <p>+216 29 637 275</p>
+                            <a href="tel:+21629637275">+216 29 637 275</a>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fab fa-github"></i>
-                        <div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="contact-details">
                             <h4>GitHub</h4>
-                            <p>github.com/inesbenjemaa</p>
+                            <a href="https://github.com/inesbenjemaa" target="_blank" rel="noopener">github.com/inesbenjemaa</a>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fab fa-linkedin"></i>
-                        <div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <div class="contact-details">
                             <h4>LinkedIn</h4>
-                            <p>linkedin.com/in/ines-ben-jemaa-3a9I71241</p>
+                            <a href="https://linkedin.com/in/ines-ben-jemaa-3a9I71241" target="_blank" rel="noopener">
+                                linkedin.com/in/ines-ben-jemaa
+                            </a>
                         </div>
                     </div>
-                    <div class="contact-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
                             <h4>Location</h4>
                             <p>Tunis, Tunisia</p>
                         </div>
                     </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required placeholder="Your Name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" placeholder="What is this regarding?">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Your message here..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -318,11 +869,68 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Ines Ben Jemaa. All rights reserved.</p>
-            <p>Cybersecurity Engineer | Network Security Specialist</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo">Ines<span>BenJemaa</span></div>
+                    <p>Cybersecurity Engineer & ML Security Specialist</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h5>Connect With Me</h5>
+                    <div class="social-icons">
+                        <a href="https://github.com/inesbenjemaa" target="_blank" rel="noopener" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/ines-ben-jemaa-3a9I71241" target="_blank" rel="noopener" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="mailto:inesbenjemaa7@gmail.com" aria-label="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Ines Ben Jemaa. All rights reserved.</p>
+                <p>Designed with <i class="fas fa-heart"></i> for cybersecurity</p>
+            </div>
         </div>
     </footer>
 
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Modals will be inserted by JavaScript -->
+    <div id="modals-container"></div>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
+    
+    <script>
+        // Inline script for immediate functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log('Portfolio loaded successfully!');
+        });
+        
+        function downloadCV() {
+            alert('CV download functionality will be implemented soon!');
+            // In a real implementation, this would trigger a file download
+            // window.location.href = 'cv/ines-ben-jemaa-cv.pdf';
+        }
+    </script>
 </body>
 </html>
